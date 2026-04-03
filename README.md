@@ -31,3 +31,9 @@ manipulating and cleaning their data.
         -   function to make a graph of improvement over time
 -   Test code
 -   Everything else
+
+Jericho's feedback: As mentioned with the both of y'all, this is a great idea for a package. The challenge as I've mentioned earlier is trying to scrape the data for yourselves. So long as you're able to collect the data for a given swimmer on a website using tools from another package, I think it can work. If the web-scraping becomes challenging to code up, you may be forced to limit your package to user-created datasets that have all of the swimming information inside.
+
+Jessie brought this up I believe, but this package may be of interest: [SwimScraper](https://pypi.org/project/SwimScraper/). I would investigate its code and see if there is a way to utilize a decent chunk of the functionality inside. 
+
+As for the rest of the proposal, it looks promising. Once the scraping gets sorted out, you can consider what tasks you would like a user to have at their disposal to explore the swimming data a bit more. You all are good to go!
