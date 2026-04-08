@@ -16,18 +16,12 @@ py_install("requests")
 requests <- import("requests")
 csv <- import("csv")
 
-
 py_install("bs4")
 bs4 <- import("bs4")
 bs <- bs4$BeautifulSoup
 
-#py_install("beautifulsoup4")
-#bs_test <- import("beautifulsoup4")
-
-
 py_install("pandas")
 pandas <- import("pandas")
-
 
 time <- import("time")
 
@@ -35,16 +29,27 @@ py_install("selenium")
 selenium <- import("selenium")
 webdriver <- selenium$webdriver
 
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
-# from selenium.webdriver.support.ui import Select
-# from selenium.webdriver.chrome.options import Options
-# from selenium.common.exceptions import TimeoutException
-# from selenium.common.exceptions import NoSuchElementException
-# from selenium.common.exceptions import StaleElementReferenceException
-# from selenium.webdriver.common.action_chains import ActionChains
-# from webdriver_manager.chrome import ChromeDriverManager
+By <- selenium$webdriver$common$by$By
+
+WebDriverWait <- selenium$webdriver$support$ui$WebDriverWait
+
+EC <- selenium$webdriver$support$expected_conditions
+
+Select <- selenium$webdriver$support$ui$Select
+
+Options <- selenium$webdriver$chrome$options$Options
+
+TimeoutException <- selenium$common$exceptions$TimeoutException
+
+NoSuchElementException <- selenium$common$exceptions$NoSuchElementException
+
+StaleElementReferenceException  <- selenium$common$exceptions$StaleElementReferenceException
+
+ActionChains <- selenium$webdriver$common$action_chains$ActionChains
+
+py_install("webdriver_manager")
+webdriver_manager <- import("webdriver_manager")
+ChromeDriverManager <- webdriver_manager$chrome$ChromeDriverManager
+
 
 library(tidyverse)
