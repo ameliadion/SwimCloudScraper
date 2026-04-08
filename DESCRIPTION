@@ -16,3 +16,7 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/ameliadion/SwimCloudScraper
 BugReports: https://github.com/ameliadion/SwimCloudScraper/issues
+Imports: 
+    devtools,
+    reticulate
+RoxygenNote: 7.3.3
