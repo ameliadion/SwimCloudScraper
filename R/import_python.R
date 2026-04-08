@@ -1,16 +1,16 @@
-#' Title Here
+#' Import Python
 #'
-#' @description Add brief description to function(s)
-#' @details Specifics about functionality, inputs, etc.
-#' @param input Brief description of input. (Add as many params as needed)
-#' @return Brief description of what function returns/prints.
-#' @export Added here to export function to user (text not needed here)
-#' @import package Import package used to supplement function. (Add as many as needed)
+#' @description Installing and adding elements to environment to be used in code. User will not interact with this file.
+#' @details Importing Python packages, elements, and classes to R.
+#' @param
+#' @return
+#' @export
+#' @import reticulate, tidyverse, requests, bs4, pandas, selenium, webdriver_manager
 #' @examples
-#' Put function call as example.
-#'
+
 install.packages("reticulate")
 library(reticulate)
+library(tidyverse)
 
 py_install("requests")
 requests <- import("requests")
@@ -50,6 +50,3 @@ ActionChains <- selenium$webdriver$common$action_chains$ActionChains
 py_install("webdriver_manager")
 webdriver_manager <- import("webdriver_manager")
 ChromeDriverManager <- webdriver_manager$chrome$ChromeDriverManager
-
-
-library(tidyverse)
